@@ -1,0 +1,25 @@
+{
+    "type": "APL",
+    "version": "1.6",
+    "description": "Empty APL document.",
+    "settings": {},
+    "theme": "dark",
+    "import": [],
+    "resources": [],
+    "styles": {},
+    "onMount": [],
+    "graphics": {},
+    "commands": {},
+    "layouts": {},
+    "mainTemplate": {
+      "items": [
+        {
+          "type": "Text",
+          "height": "100vh",
+          "textAlign": "center",
+          "textAlignVertical": "center",
+          "text": ""
+        }
+      ]
+    }
+}
