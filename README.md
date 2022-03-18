@@ -25,7 +25,7 @@ http://homeassistant.local:8123/dashboard-url
 When the skill is invoked, it uses the [OpenURL](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apl-standard-commands-v1-5.html#open_url_command) APL command to open the page
 
 ```html
-http://homeassistant.local:8123/dashboard-name/<number>
+http://homeassistant.local:8123/dashboard-url/<number>
 ```
 
 in the Silk browser on the Echo Show. That way you can open any view of the specified dashboard as long as you assign numbers as URLs.

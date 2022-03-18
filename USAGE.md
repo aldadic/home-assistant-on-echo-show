@@ -16,7 +16,7 @@ While this of course works, it is a bit inconvenient because you need to memoriz
 Alexa, tell dashboard viewer open page 3
 ```
 
-This way the routine basically acts as an alias for the skill command. As a bonus, you can also instruct Alexa to say something (e.g. "OK") before opening the view. 
+This way the routine basically acts as an alias for the skill command. As a bonus, you can also instruct Alexa to say something (e.g. "OK") before opening the view.
 
 ## Open views from Home Assistant
 
