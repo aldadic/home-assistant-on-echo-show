@@ -79,7 +79,7 @@ class OpenPageIntentHandler(AbstractRequestHandler):
         # type: (HandlerInput) -> Response
 
         response_builder = handler_input.response_builder
-        number = handler_input.request_envelope.request.intent.slots["page"].value
+        number = ask_utils.request_util.get_slot(handler_input, "page").value
 
         # Render empty template, needed for OpenURL command
         # see https://amazon.developer.forums.answerhub.com/questions/220506/alexa-open-a-browser.html
@@ -90,7 +90,7 @@ class OpenPageIntentHandler(AbstractRequestHandler):
             )
         )
 
-        # Open default page of dashboard
+        # Open respective page of dashboard
         response_builder.add_directive(
             ExecuteCommandsDirective(
                 token=TOKEN,
