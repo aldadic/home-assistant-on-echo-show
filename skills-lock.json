@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "skills": {
+    "aws-serverless": {
+      "source": "aws/agent-toolkit-for-aws",
+      "commit": "faab23017866c74a4b4033bceb141cdffa28aad8",
+      "sourceType": "github",
+      "skillPath": "skills/core-skills/aws-serverless/SKILL.md",
+      "computedHash": "22a61ffaac9f88d6e389599c02d97343aaf8f97c12bbc96563fb552e5ad2d9f3"
+    },
+    "nodejs-best-practices": {
+      "source": "sickn33/agentic-awesome-skills",
+      "commit": "4a52ab5ef117bdce2c6ba8d87dd64df0c840dfea",
+      "sourceType": "github",
+      "skillPath": "skills/nodejs-best-practices/SKILL.md",
+      "computedHash": "52eb0299a742be2f2db6a245a31fb3f3b3cfcfa8adf033b909d389bd1a803d7f"
+    }
+  }
+}

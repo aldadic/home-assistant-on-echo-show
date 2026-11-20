@@ -3,6 +3,9 @@
 	"version": "1.0.0",
 	"type": "module",
 	"description": "alexa skill for ha on echo show",
+	"engines": {
+		"node": ">=26.0.0"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint --ext \".ts,.js\" --ignore-path .eslintignore .",
@@ -12,9 +15,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"ask-sdk-core": "^2.14.0",
-		"ask-sdk-model": "^1.86.0",
-		"aws-sdk": "^2.1499.0",
-		"serverless": "^4.15.1"
+		"ask-sdk-model": "^1.86.0"
 	},
 	"devDependencies": {
 		"eslint": "^8.54.0",
@@ -24,6 +25,7 @@
 		"eslint-plugin-n": "^16.3.1",
 		"eslint-plugin-prettier": "^5.0.1",
 		"eslint-plugin-promise": "^6.1.1",
-		"prettier": "^3.1.0"
+		"prettier": "^3.1.0",
+		"serverless": "^4.46.0"
 	}
 }

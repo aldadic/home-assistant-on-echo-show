@@ -12,7 +12,7 @@ import Alexa from 'ask-sdk-core'
 // The SkillBuilder acts as the entry point for your skill, routing all request and response
 // payloads to the handlers above. Make sure any new handlers or interceptors you've
 // defined are included below. The order matters - they're processed top to bottom.
-export const handler = Alexa.SkillBuilders.custom()
+const skill = Alexa.SkillBuilders.custom()
 	.addRequestHandlers(
 		LaunchRequestHandler,
 		OpenPageIntentHandler,
@@ -23,4 +23,6 @@ export const handler = Alexa.SkillBuilders.custom()
 	)
 	.addErrorHandlers(ErrorHandler)
 	.withApiClient(new Alexa.DefaultApiClient())
-	.lambda()
+	.create()
+
+export const handler = async (event, context) => skill.invoke(event, context)
