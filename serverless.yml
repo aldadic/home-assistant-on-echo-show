@@ -5,6 +5,13 @@ provider:
   name: aws
   runtime: nodejs26.x
 
+package:
+  patterns:
+    - '!skill-package/**'
+    - '!scripts/**'
+    - '!docs/**'
+    - 'documents/**'
+
 # plugins:
 #   - serverless-esbuild
 
